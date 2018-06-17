@@ -1,0 +1,251 @@
+body {
+	background-color: #F0F1F3;
+	font-family: 'Cormorant Upright', serif;
+
+}
+
+header {
+
+	padding: 0px 15px 0px 15px;
+	background-color: #E3E4E8;
+	box-shadow: 0px 0px 10px #888888;
+
+}
+
+.logo {
+
+	text-align: center;
+	height: 100px;
+}
+
+.drustvene-ikone {
+	text-align: right;
+	height: 70px;
+	padding-top: 30px;
+}
+
+.navigacija a {
+padding: 15px;
+color: black;
+font-size: 20px;
+font-weight: bold;
+}
+
+.navigacija {
+	padding-top: 30px;
+}
+
+.slider-home {
+	padding-bottom: 30px;
+	padding-top: 40px;
+	text-align: center;
+
+}
+
+.slider-home h3 {
+	color: black;
+	font-size: 55px;
+	font-weight: bold;
+}
+.slider-home h4 {
+	color: #BDBDBD;
+	font-size: 55px;
+	font-style: italic;
+	padding-bottom: 0;
+	padding-left: 45px;
+	margin-bottom: -80px;
+	margin-top: -20px;
+}
+
+.galerija-home {
+	background-image: url(slike/pozadina.jpg);
+	
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 30px; 
+
+}
+.galerija-home img {
+	border-radius: 50%;
+	width: 180px;
+	border: 10px solid rgba(255,255,255,0.5);
+	margin-left: -15px;
+	margin-right: -15px; 
+
+}
+.galerija-home img:hover {
+
+	border: 10px solid rgba(255,255,255,1);
+
+}
+
+.galerija-home h1 {
+	padding-bottom: 30px;
+	font-size: 30px;
+	color: white;
+}
+
+footer {
+	text-align: center;
+	box-shadow: 0px 0px 10px #888888;
+	margin-top: 100px;
+	padding-bottom: 20px;
+	background-color: #E3E4E8;
+}
+
+.forma-home {
+	margin-top:100px;
+	font-weight: bold;
+}
+
+.forma-slika {
+	background-image: url(slike/19.jpg);
+	background-size: cover;
+	background-position: bottom center;
+}
+
+.forma-text label {
+	font-weight: bold;
+}
+
+.page-o_nama {
+	
+	font-weight: bold;
+}
+
+.page h3 {
+font-weight: bold;
+}
+
+.page {
+	margin-top: 75px;
+	font-size: 19px;
+}
+
+.galerija-slika {
+width: 45%;
+height: 100px;
+margin-bottom: 8px;
+
+}
+
+.sivastrana {
+	background: gray;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	text-align: center;
+	margin-right: auto;
+	min-height: 800px;
+	/*
+    width: 100%;
+    height: 800px;
+    position:  fixed;
+    top: 0px;
+    */
+    
+
+}
+
+.sivastrana a {
+	color: white;
+	margin-top: 10px;
+	display: block;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+	/*
+	height: 1000px;
+    position:  fixed;
+    top: 0px;
+    height:800px;
+    */
+
+
+
+}
+
+.admin-footer {
+	margin-top: 0;
+}
+
+
+.osoblje-footer {
+	margin-top: 0;
+}
+
+
+#porukaRegistracija{
+	font-family: 'Cormorant Upright', serif;
+	color:black;
+	font-weight: 600;
+	font-size: 1.5rem;
+
+}
+
+#porukaKontakt{
+	font-family: 'Cormorant Upright', serif;
+	color:black;
+	font-weight: 600;
+	font-size: 1.5rem;
+
+}
+
+.adminInput{
+	border:none;
+	background-color: #F0F1F3;
+
+
+}
+
+#adminDelete [href] {
+	text-decoration: none;
+	color:white;
+
+}
+
+.osobljeDelete [href]{
+	text-decoration:none;
+	color:white;
+
+}
+
+.osobljeInput{
+	border:none;
+	background-color:#F0F1F3;
+}
+
+.osobljeSave [href] {
+	text-decoration:none;
+	color:white;
+}
+
+#proizvodi{
+	font-family: 'Cormorant Upright', serif;
+	color:black;
+	font-weight: 600;
+	text-align:center;
+}
+
+#osobljePrvi{
+	display:block;
+}
+
+#osobljeDrugi{
+	display:none;
+}
+
+#osobljeTreci{
+	display:none;
+}
+
+#osobljeCetvrti{
+	display:none;
+}
+
+#adminPrvi{
+	display:block;
+}
+
+#adminDrugi{
+	display:none;
+}
