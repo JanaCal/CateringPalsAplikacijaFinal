@@ -14,7 +14,7 @@ session_start();
 		//Kreiranje narudzbe od strane korisnika, unos u bazu, zapis koji korisnik je narucio preko sessije
 		$sql = "SELECT naziv, opis, cijena_po_jedinici, tip, slika FROM proizvod";
 		$result = $conn->query($sql);
-		//$uloga = $_SESSION["uloga"];
+		$uloga = $_SESSION["uloga"];
 
 		if ($result->num_rows > 0) {
 		    // output data of each row
@@ -37,7 +37,7 @@ session_start();
 		    	echo "<td><p>$row[opis]</p></td>";
 		    	echo "<td><p>$row[cijena_po_jedinici]</p></td>";
 		    	echo "<td><p>$row[tip]</p></td>";
-		    	echo "<td><a href='actionNarudzba.php?naziv=$row[naziv]&cijena=$row[cijena_po_jedinici]&tip=$row[tip]'>Naruci</a></td>";
+		    	echo "<td><a href='actionNarudzba.php?naziv=$row[naziv]&cijena=$row[cijena_po_jedinici]&tip=$row[tip]&uloga=$uloga'>Naruci</a></td>";
 		    	echo "</tr></form>";
 		    	echo "</tbody>";
 		    }
