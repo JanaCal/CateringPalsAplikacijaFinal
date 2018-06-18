@@ -5,6 +5,7 @@ $(document).ready(function(){
     			$(".glavna").attr("src", src);
 
     		});
+			});
      			
 
 

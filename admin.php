@@ -87,8 +87,8 @@ $conn->close();
 
 <div class="container-fluid">
 	<div class="row">
-		<div id="adminPrvi">
-		<div class="col-12">
+	
+		<div id="adminPrvi" class="col-12">
 
 <?php 
 		//Ispis korisnika iz baze, editovanje i brisanje korisnika
@@ -97,7 +97,7 @@ $conn->close();
 
 		if ($result->num_rows > 0) {
 		    // output data of each row
-		    echo "<table class='table table-hover'>
+		    echo "<table  class='table table-hover table-responsive'>
 		    	<thead>
     			<tr>
      			<th scope='col'>ID</th>
@@ -109,8 +109,9 @@ $conn->close();
       			<th scope='col'>SAVE</th>
     			</tr>
   				</thead>";
+  				echo "<tbody>";
 		    while($row = $result->fetch_assoc()) {
-		    	echo "<tbody>";
+		    	
 		    	echo "<tr><form action='adminSave.php' method='POST'>";
 		    	echo "<td><input style='width:25px' type='text' name='id' value='$row[id]' class='adminInput'></td>";
 		    	echo "<td><input type='text' name='korisnikUsername' value='$row[username]' class='adminInput'></td>";
@@ -119,9 +120,10 @@ $conn->close();
 		    	echo "<td><input type='text' name='korisnikPrezime' value='$row[prezime]' class='adminInput'></td>";
 		    	echo "<td><button class='btn btn-danger' id='adminDelete'><a href=\"delete.php?id=".$row['id']."\">Delete</a></button></td>";
 		    	echo "<td><button class='btn btn-success' type='submit'>Save</button></td>";
-		    	echo "</tr></form>";
-		    	echo "</tbody>";
+		    	echo "</form></tr>";
+		    	
 		    }
+		    echo "</tbody>";
 		    echo "</table>";
 		} else {
 		    echo "0 results";
@@ -187,12 +189,14 @@ $conn->close();
 
 		echo "<br><br><button type='submit' class='btn btn-danger'>Dodaj korisnika</button></form>";
 		?>
+		<br>
 		</div>
-		</div>
+		
 
-		<div id="adminDrugi">
+		
 
 		<div class="col-4">
+			<div id="adminDrugi">
 		<?php
 		echo "<br><br><h5>Podešavanja</h5>";
 
